@@ -1,3 +1,15 @@
 spring:
     application:
         name: subscription
+
+    mongodb:
+        uri: mongodb://admin:1234@127.0.0.1:27017/iotizze_db?authSource=admin
+
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri: http://localhost:9000
+
+server:
+    port: 8082
