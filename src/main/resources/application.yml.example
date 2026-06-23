@@ -3,6 +3,8 @@ spring:
         name: subscription
 
     mongodb:
+        representation:
+            uuid: STANDARD
         uri: mongodb://admin:1234@127.0.0.1:27017/iotizze_db?authSource=admin
 
     security:
@@ -10,6 +12,18 @@ spring:
             resourceserver:
                 jwt:
                     issuer-uri: http://localhost:9000
+
+base:
+    url: http://localhost:9000
+
+springdoc:
+    swagger-ui:
+        path: /swagger-ui.html
+        oauth:
+            client-id: swagger-ui
+            use-pkce-with-authorization-code-grant: true
+    api-docs:
+        path: /api-docs
 
 server:
     port: 8082
