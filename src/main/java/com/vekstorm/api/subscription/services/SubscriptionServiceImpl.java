@@ -30,6 +30,7 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     public Subscription save(Subscription subscription) {
         subscription.setId(UUID.randomUUID());
         subscription.setCreatedAt(Instant.now());
+        subscription.setSubscriptionCode(UUID.randomUUID().toString().replace("-", "").substring(0, 8).toUpperCase());
         return subscriptionRepository.save(subscription);
     }
 
