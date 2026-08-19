@@ -1,0 +1,6 @@
+# Servicio: subscription
+# Repo:    https://github.com/vekstorm/subscription-api.git
+# Rama:    main
+#
+# Tras clonar el repo raíz, clonar aquí:
+#   git clone https://github.com/vekstorm/subscription-api.git subscription
