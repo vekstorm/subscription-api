@@ -34,3 +34,15 @@ build/
 **/src/main/resources/application.yml
 /application-local.yml
 /src/main/resources/application-local.yml
+
+### Local environment and secret material ###
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
